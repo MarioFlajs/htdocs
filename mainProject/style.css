@@ -73,33 +73,57 @@ border-radius: 20px;
 .grid-container {
   display: grid;
   grid-template: 400px / auto auto auto;
-  grid-gap: 120px;
+  grid-gap: 100px;
   background-color: #2195f300;
-  padding: 10px;
+  padding: 15px;
+  margin: 15px;
+  
 }
 
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
+  text-shadow: 0.5px 0.5px;
   padding: 20px 0;
   font-size: 30px;
+  margin: 5px;
+  
 }
 
 .gridSizeImg {
   width: 300px;
   height: 300px;
   border: solid 3px rgba(0, 0, 0, 0.192);
+  border-radius: 2px;
 }
 
 
+.gridImagesText {
+  
+  top: 0;
+  height: 13rem;
+  padding: 10px;
+  text-align: center;
+  color: rgba(148, 115, 5, 0.973);
+  font-size: 30px;
+  text-decoration: none;
+  
+  
+}
 
+.gridImagesText :hover {
+  background-color: #0000005d;
+  border-radius: 2px;
+  
+}
 
 .body {
+
 min-height: 100rem;
 padding: 10px;
 text-align: center;
 background: rgba(175, 221, 137, 0.459);
-color: rgba(148, 115, 5, 0.973);
+color: rgba(192, 150, 11, 0.973);
 font-size: 20px;
 border-radius: 20px;
 }
@@ -107,8 +131,9 @@ border-radius: 20px;
 footer {
   position: fixed;
   left: 0;
-  bottom: 0;
+  bottom: 0px;
   width: 100%;
+  min-height: 5%;
   background-color: rgba(27, 27, 27, 0.945);
   color: white;
   text-align: center;
@@ -116,9 +141,108 @@ footer {
 
 .footerSty {
   display: inline;
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255, 0.822);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
 }
 
+.pclass {
+  margin: 5px;
+
+}
+
+.searchForm {
+  
+  height: 40px;
+  
+  
+  font-size: 20px;
+  
+  cursor: pointer;
+}
+
+.searchMag {
+height: 29px;
+width: 70px;
+background-color: rgba(0, 0, 0, 0.61);
+color: #ffffff;
+
+}
+
+.searchMag:hover {
+  background-color: rgba(252, 0, 0, 0.493);
+  
+}
+
+.searchInput {
+  padding: 5px;
+  margin: 10px -6px;
+  border-radius: 3px;
+  
+  
+}
+
+
+.grid-container-prod {
+  
+  display: grid;
+  grid-template: 200px;
+  grid-gap: 50px;
+  background-color: #2195f300;
+  padding: 15px;
+  margin: 15px;
+  
+}
+
+.grid-container-prod > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  text-shadow: 0.5px 0.5px;
+  padding: 20px 0;
+  font-size: 30px;
+  margin: 5px;
+  
+}
+
+.gridSizeImgProd {
+  width: 300px;
+  height: 300px;
+  border: solid 3px rgba(0, 0, 0, 0.192);
+  border-radius: 2px;
+  padding: 3px;
+  margin: 0px 22px;
+}
+
+.item1 {
+  display: grid;
+  grid-template-columns: 340px auto 400px;
+  
+  
+  
+  
+  
+  
+}
+
+.pcla {
+  
+  
+  
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgba(82, 68, 24, 0.973);
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.calc_mm {
+  max-width: 50px;
+}
+
+.smallTitle {
+  color:rgba(255, 255, 255, 0.849);
+  background-color:   rgba(0, 0, 0, 0.61);
+  width: 100%;
+  height: 37px;
+  border-radius: 5px;
+}

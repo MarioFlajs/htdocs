@@ -34,14 +34,18 @@
     <nav>
         <ul class="navListMenu">
           <li class="navList"><a href="#home">Home</a></li>
-          <li class="navList"><a href="#news">Products</a></li>
+          <li class="navList"><a href="products.php">Products</a></li>
           <li class="navList"><a href="#contact">Promotion</a></li>
           <li class="navList"><a href="#contact">Simple Builds</a></li>
           
           <li class="navList"><a href="#contact">Contact</a></li>
-          <li class="navList"><form class="searchForm" action="action_page.php">
-              <input type="text" placeholder="Search.." name="search">
-              <button type="submit"><i class="searchMag"></i></button>
+          <li class="navList">
+            <form class="searchForm" action="action_page.php">
+
+              <input class="searchInput" type="text" placeholder="Search.." name="search">
+
+              <button class="searchMag" type="submit">Search</button>
+
               </form></li>
           <li style="float:right" class="navList"><a href="#about">About</a></li>
         </ul>
@@ -54,13 +58,12 @@
     <img class="woodPromo" src="pic/ToolPromo.png">
   <br>
    <div class="grid-container">
-    <div class="item1"><img class="gridSizeImg" src="pic/picGrid/image1.png" alt=""><p>Wood as a material</p></div>
-    
-    <div class="item2"><img class="gridSizeImg" src="pic/picGrid/image2.png" alt=""><p>go</p></div>
-    <div class="item3"><img class="gridSizeImg" src="pic/picGrid/image3.png" alt=""><p>Cut to size</p></div> 
-    <div class="item4"><img class="gridSizeImg" src="pic/picGrid/image4.png" alt=""><p>go</p></div>
-    <div class="item5"><img class="gridSizeImg" src="pic/picGrid/image5.png" alt=""><p>go</p></div>
-    <div class="item6"><img class="gridSizeImg" src="pic/picGrid/image6.png" alt=""><p>go</p></div>
+    <div class="item10"><a href="#" class="gridImagesText"><img class="gridSizeImg" src="pic/picGrid/image1.png" alt=""><p class="pclass">Wood as a material</p></a></div>
+    <div class="item20"><a href="#" class="gridImagesText"><img class="gridSizeImg" src="pic/picGrid/image2.png" alt=""><p class="pclass">Projects</p></a></div>
+    <div class="item30"><a href="#" class="gridImagesText"><img class="gridSizeImg" src="pic/picGrid/image3.png" alt=""><p class="pclass">Cut to size</p></a></div> 
+    <div class="item40"><a href="#" class="gridImagesText"><img class="gridSizeImg" src="pic/picGrid/image4.png" alt=""><p class="pclass">Burning questions</p></a></div>
+    <div class="item50"><a href="#" class="gridImagesText"><img class="gridSizeImg" src="pic/picGrid/image5.png" alt=""><p class="pclass">Ethically sourced</p></a></div>
+    <div class="item60"><a href="#" class="gridImagesText"><img class="gridSizeImg" src="pic/picGrid/image6.png" alt=""><p class="pclass">Helping you</p></a></div>
   </div>
   </div>
   
