@@ -5,5 +5,4 @@ $databaseUser = 'ThomasAAnderson';
 $databaseHost = 'localhost';
 $database = 'mainprojectwood';
 
-
 ?>

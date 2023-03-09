@@ -1,6 +1,7 @@
 
 .imgBackGround {
   background-image: url(pic/backgroundMain1.jpg);
+  
    
 }
 
@@ -19,6 +20,23 @@
   
 }
 
+#float {
+  float: right;
+  border-radius: 20px;
+  background-color: #000000a9;
+  margin-top: 0px;
+   
+}
+
+
+#float a:hover {
+  border-radius: 20px;
+  background-color: #000000a9;
+  
+ 
+
+}
+
 .navList {
   float: left;
    
@@ -34,6 +52,7 @@
 
 .navList a:hover {
   background-color: #000000a9;
+  transition: 0.1s;
 
 }
 
@@ -114,6 +133,7 @@ border-radius: 20px;
 .gridImagesText :hover {
   background-color: #0000005d;
   border-radius: 2px;
+  transition: 0.1s;
   
 }
 
@@ -133,7 +153,7 @@ footer {
   left: 0;
   bottom: 0px;
   width: 100%;
-  min-height: 5%;
+  min-height: 1%;
   background-color: rgba(27, 27, 27, 0.945);
   color: white;
   text-align: center;
@@ -153,12 +173,8 @@ footer {
 }
 
 .searchForm {
-  
   height: 40px;
-  
-  
   font-size: 20px;
-  
   cursor: pointer;
 }
 
@@ -172,6 +188,7 @@ color: #ffffff;
 
 .searchMag:hover {
   background-color: rgba(252, 0, 0, 0.493);
+  transition: 0.1s;
   
 }
 
@@ -245,4 +262,131 @@ color: #ffffff;
   width: 100%;
   height: 37px;
   border-radius: 5px;
+}
+
+
+.bodyOfLogin {
+  width: 700px;
+  height: 700px;
+  margin: auto;
+  padding: auto;
+  display: grid;
+  margin-top: 5rem;
+  
+  background-color: #306830b0;
+  border-radius: 20px;
+  border: 1px solid;
+  box-shadow: 1px 5px 5px 0px rgb(103, 209, 17);
+  text-align: center;
+  
+  
+}
+
+.logoLogin {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 50%;
+}
+
+.loginText {
+  display: inline-grid;
+  grid-template-rows: 5;
+  
+  max-width: 400px;
+  
+}
+
+
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid;
+  margin-top: 90px;
+  border-radius: 20px;
+  
+
+}
+
+.container a {
+  max-width: 20rem;
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: none;
+  border: solid 3px rgba(0, 0, 0, 0.192);
+  color: rgba(255, 255, 255, 0.822);
+  background-color: #306830b0;;
+  border-radius: 20px;
+  font-size: 18px;
+}
+
+.container a:hover {
+  background-color: #000000a9;
+  transition: 0.1s;
+
+}
+
+.subButton {
+height: 29px;
+width: auto;
+background-color: rgba(134, 59, 59, 0.87);
+color: #ffffff;
+border-radius: 20px;
+
+}
+
+.subButton:hover {
+  background-color: rgba(252, 0, 0, 0.493);
+  transition: 0.1s;
+
+  
+}
+
+
+.buyNow {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  text-decoration: none;
+  border: solid 3px rgba(0, 0, 0, 0.192);
+  color: rgba(255, 255, 255, 0.822);
+  background-color: #30683088;;
+  border-radius: 20px;
+  font-size: 40px;
+}
+
+.buyNow:hover {
+  background-color: rgba(252, 0, 0, 0.493);
+  transition: 0.2s;
+
+  
+}
+
+.strikethrough {
+  position: relative;
+}
+.strikethrough:before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  right: 0;
+  border-top: 3px solid;
+  border-color: inherit;
+  
+  -webkit-transform:rotate(-5deg);
+  -moz-transform:rotate(-5deg);
+  -ms-transform:rotate(-5deg);
+  -o-transform:rotate(-5deg);
+  transform:rotate(-5deg);
 }

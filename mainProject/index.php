@@ -1,4 +1,9 @@
-<?php include 'phpMain.php';?>
+<?php include 'phpMain.php';
+
+
+session_start();
+
+?>
 
 
 
@@ -26,10 +31,18 @@
     <title>WoodBoarding</title>
 </head>
 <body class="imgBackGround">
- 
+
+
 
   <div class="header">
     <img class="logo" src="pic/Logo.png">
+
+    <?php 
+      if (isset($_SESSION['userId'])) {
+        echo "<p id='float' class='navList'><a href='./logout.php'>Logout {$_SESSION['userId']}</a></p>";
+      }
+
+    ?>
 
     <nav>
         <ul class="navListMenu">
