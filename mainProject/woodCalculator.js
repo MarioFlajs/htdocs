@@ -9,6 +9,8 @@ function multiplyBy()
         result111 = numFormulaAsh * num1 * num2 * num3;
         result11 = result111.toFixed(2);  
         document.getElementById("result").innerHTML = result11;
+
+        
         
 }
 
@@ -112,24 +114,92 @@ function CalculateNumSaw() {
         document.getElementById('result12').innerHTML = saw * 8.00;
 }
 
-elements.addEventListener (onpageshow, elemRemoveFrom, useCapture);
-
-function elemRemoveFrom() {
-        if (elements === true) {
-                document.getElementsByClassName('buyNow').removeAttribute('href');
-        }
 
 
-}
+
+
 
 function search_items() {
-        
-        const searchBox = document.getElementsByClassName('searchInput').value.toUpperCase();
-        const nameOfProduct =  document.querySelectorAll('div[property=name]');
-        const bname = document.getElementsByTagName('b')
 
-        for(let i = 0; i < bname.length; i++) {
-                let
+        
+        if(location == "indexLogInUser.php"){
+                location.replace(href="productsLoginUser.php")
+                
+
+
         }
+        
+        var elem = document.getElementById('searchInput').value;
+        var items = document.querySelectorAll('.item1');
+        
+        
+        for (let i = 0; i < items.length; i++) {
+                if (items[i].id == elem) { 
+                    var remain = items[i];
+                }
+            }
+        
+        
+         
+
+    
+        
+        var hederLogo = document.getElementById('hederLogo') 
+
+        pa = document.body;
+
+         
+        remain = remain.parentNode.removeChild(remain);
+        
+      
+
+        while(pa.lastChild) pa.removeChild(pa.lastChild); 
+        
+        
+
+
+       
+        pa.appendChild(hederLogo);
+        pa.appendChild(remain);
+
+        
+        remain.style.backgroundColor = "#F0F0F0";
+        remain.style.borderRadius = "20px";
+        
+
+       
+
+        
+       
+        
+         event.preventDefault();
+        
 }
 
+
+function buyNow() {
+
+        let itemAsh = document.getElementById('ash').id;
+        let itemCherry = document.getElementById('cherry').id;
+        var items = document.querySelectorAll('.item1');
+       
+        for (let i = 0; i < items.length; i++) {
+                if (items[i].id == itemAsh) { 
+                    var remain = items[i].id;
+                }
+                else if  (items[i].id == itemCherry) { 
+                        var remain = items[i].id;
+                }
+                
+                
+            }
+            remain;
+        var size1 = document.getElementsByClassName('calc_mm')[0].value;
+        var size2 = document.getElementsByClassName('calc_mm')[1].value;
+        var size3 = document.getElementsByClassName('calc_mm')[2].value;
+        
+       
+        var newLi = document.getElementById('navS').innerHTML = remain + ' x ' + size1 + ' x ' + size2 + ' x ' + size3;
+        
+            
+}

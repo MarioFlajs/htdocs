@@ -46,14 +46,14 @@ session_start();
 
     <nav>
         <ul class="navListMenu">
-          <li class="navList"><a href="index.php">Home</a></li>
-          <li class="navList"><a href="products.php">Products</a></li>
+          <li class="navList"><a href="indexLogInUser.php">Home</a></li>
+          <li class="navList"><a href="productsLogInUser.php">Products</a></li>
           <li class="navList"><a href="#contact">Promotion</a></li>
           <li class="navList"><a href="#contact">Simple Builds</a></li>
           
           <li class="navList"><a href="#contact">Contact</a></li>
           <li class="navList">
-            <form class="searchForm" action="action_page.php">
+            <form class="searchForm" action="productsLogInUser.php";>
 
               <input class="searchInput" type="text" placeholder="Search.." name="search">
 

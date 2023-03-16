@@ -23,7 +23,7 @@ if ($result->num_rows > 0) {
 
     if (password_verify($_POST['password'], $user['password'])) {
          $_SESSION['userId'] = $user['email'];
-        header('location: ./products.php');
+        header('location: ./productsLogInUser.php');
         exit();
     }
    
