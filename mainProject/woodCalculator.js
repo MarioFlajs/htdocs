@@ -177,29 +177,107 @@ function search_items() {
 }
 
 
-function buyNow() {
+function buyNow(event) {
+        var hiddenOff = document.getElementById('navS');
+        var hiddenOffbutton = document.getElementById('purchase');
 
-        let itemAsh = document.getElementById('ash').id;
-        let itemCherry = document.getElementById('cherry').id;
-        var items = document.querySelectorAll('.item1');
-       
-        for (let i = 0; i < items.length; i++) {
-                if (items[i].id == itemAsh) { 
-                    var remain = items[i].id;
-                }
-                else if  (items[i].id == itemCherry) { 
-                        var remain = items[i].id;
-                }
-                
-                
-            }
-            remain;
-        var size1 = document.getElementsByClassName('calc_mm')[0].value;
-        var size2 = document.getElementsByClassName('calc_mm')[1].value;
-        var size3 = document.getElementsByClassName('calc_mm')[2].value;
+        if (hiddenOff.style.visibility === 'hidden') {
+                hiddenOff.style.visibility = 'visible';}
+
+        if (hiddenOffbutton.style.visibility === 'hidden') {
+                hiddenOffbutton.style.visibility = 'visible';}
+               
         
        
-        var newLi = document.getElementById('navS').innerHTML = remain + ' x ' + size1 + ' x ' + size2 + ' x ' + size3;
+
+        let parent = event.parentNode;
+        console.log(parent);
+        
+        var items = document.querySelectorAll('.item1');
+       let itemME = parent.querySelectorAll('.calc_mm')
+      
+            
+        var size1 = itemME[0].value;
+        var size2 = itemME[1].value;
+        var size3 = itemME[2].value;
+        var newName = parent.id;
+        var test = parent.querySelector('.calc_total').innerText;
+
+        var txtVal = newName + ' : ' + size1 + ' x ' + size2 + ' x ' + size3 + ' = ' + test + ' Euro ';
+        
+        var listNode = document.getElementById('listOf');
+        var liNode = document.createElement('li');
+        var txtNode = document.createTextNode(txtVal);
+
+        liNode.appendChild(txtNode);
+        listNode.appendChild(liNode);
+
+        
+}
+
+function buyNowTool(event) {
+        var hiddenOff = document.getElementById('navS');
+        var hiddenOffbutton = document.getElementById('purchase');
+
+        if (hiddenOff.style.visibility === 'hidden') {
+                hiddenOff.style.visibility = 'visible';}
+
+        if (hiddenOffbutton.style.visibility === 'hidden') {
+                hiddenOffbutton.style.visibility = 'visible';}
+
+        let parent = event.parentNode;
+        console.log(parent);
+        
+        var items = document.querySelectorAll('.item1');
+       let itemME = parent.querySelectorAll('.calc_mm')
+      
+            
+        var size1 = itemME[0].value;
+        
+        var newName = parent.id;
+        var test = parent.querySelector('.calc_total').innerText;
+        
+       
+        
+
+        var txtVal = newName + ' x ' + size1 + ' = ' + test + ' Euro ';
+        
+        var listNode = document.getElementById('listOf');
+        var liNode = document.createElement('li');
+        var txtNode = document.createTextNode(txtVal);
+
+        liNode.appendChild(txtNode);
+        listNode.appendChild(liNode);
         
             
 }
+
+
+
+
+ 
+async function buyTheItems(listToSend) {
+listToSend = document.getElementById('listOf').innerText;
+
+ 
+        let response = await fetch(`http://localhost:/mainProject/buyItemsAndSendToData.php?q=${listToSend}`, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+      
+      var hiddenOff = document.getElementById('navS');
+      var hiddenOffbutton = document.getElementById('purchase');
+
+      if (hiddenOff.style.visibility === 'visible') {
+              hiddenOff.style.visibility = 'hidden';}
+
+      if (hiddenOffbutton.style.visibility === 'visible') {
+              hiddenOffbutton.style.visibility = 'hidden';}
+
+
+}
+
+
+

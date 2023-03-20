@@ -47,12 +47,12 @@
 
 
     <footer>
-        <a class="footerSty" href="#home">Delivery</a>
-        <a class="footerSty" href="#news">Customer Service</a>
-        <a class="footerSty" href="#contact">Payment Methods</a>
-        <a class="footerSty" href="#contact">Careers</a>
-        <a class="footerSty" href="#contact">Make Money with Us</a>
-        <a class="footerSty" href="#about">PRIVACY POLICY</a>
+        <a class="footerSty" href="contact.php">Delivery</a>
+        <a class="footerSty" href="contact.php">Customer Service</a>
+        <a class="footerSty" href="contact.php">Payment Methods</a>
+        <a class="footerSty" href="contact.php">Careers</a>
+        <a class="footerSty" href="contact.php">Make Money with Us</a>
+        <a class="footerSty" href="contact.php">PRIVACY POLICY</a>
     </footer>
 </body>
 </html>

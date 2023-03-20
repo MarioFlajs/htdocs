@@ -45,10 +45,10 @@ session_start();
         <ul class="navListMenu">
           <li class="navList"><a href="index.php">Home</a></li>
           <li class="navList"><a href="products.php">Products</a></li>
-          <li class="navList"><a href="#contact">Promotion</a></li>
-          <li class="navList"><a href="#contact">Simple Builds</a></li>
+          <li class="navList"><a href="promotion.php">Promotion</a></li>
+          <li class="navList"><a href="simpleBuilds.php">Simple Builds</a></li>
           
-          <li class="navList"><a href="#contact">Contact</a></li>
+          <li class="navList"><a href="contact.php">Contact</a></li>
           <li class="navList">
             <form class="searchForm" action="">
 
@@ -57,7 +57,7 @@ session_start();
               <button class="searchMag" onclick="search_items()" type="submit">Search</button>
 
               </form></li>
-          <li style="float:right" class="navList"><a href="#about">About</a></li>
+          <li style="float:right" class="navList"><a href="about.php">About</a></li>
         </ul>
     </nav>
   </div>
@@ -94,7 +94,7 @@ session_start();
       <a href="regPage.php" class="buyNow">Buy Now</a>
       </div>
 
-      <div class="item1" name = 'walnut' data-item="wood"><img class="gridSizeImgProd" src="pic/picProducts/timber/planed-timber-american-black-walnut-small_38.jpg" alt=""><p class="pcla"><b>Walnut</b>, typically easy to work provided the grain is straight and regular. Planer tearout can sometimes be a problem when surfacing pieces with irregular or figured grain. Glues, stains, and finishes well, (though walnut is rarely stained). <br><br>Quantity 1: 25mm x 25mm x 1m = 12.50 &#8364; <br><br>
+      <div class="item1" name = 'walnut' id="walnut" data-item="wood"><img class="gridSizeImgProd" src="pic/picProducts/timber/planed-timber-american-black-walnut-small_38.jpg" alt=""><p class="pcla"><b>Walnut</b>, typically easy to work provided the grain is straight and regular. Planer tearout can sometimes be a problem when surfacing pieces with irregular or figured grain. Glues, stains, and finishes well, (though walnut is rarely stained). <br><br>Quantity 1: 25mm x 25mm x 1m = 12.50 &#8364; <br><br>
         <label for="length_mm">Th. mm </label><input class="calc_mm" type="number" name="le_mm" id="walnutLe_mm" min="25" max="9999">
         <label for="length_mm"> x Wi. mm </label><input class="calc_mm" type="number" name="wi_mm" id="walnutWi_mm" min="25" max="9999">
         <label for="length_mm"> x Le. mm </label><input class="calc_mm" type="number" name="th_mm" id="walnutTh_mm" min="1" max="9999">
@@ -108,7 +108,7 @@ session_start();
       <a href="regPage.php" class="buyNow">Buy Now</a>
       </div>
 
-      <div class="item1" name = 'oak' data-item="wood"><img class="gridSizeImgProd" src="pic/picProducts/timber/planed-timber-american-white-oak-small-v2.jpg" alt=""><p class="pcla"><b>Oak</b>, produces good results with hand and machine tools. Has moderately high shrinkage values, resulting in mediocre dimensional stability, especially in flatsawn boards. Can react with iron (particularly when wet) and cause staining and discoloration. Responds well to steam-bending. Glues, stains, and finishes well. <br><br>Quantity 1: 27mm x 27mm x 1m = 7.29 &#8364; <br><br>
+      <div class="item1" name = 'oak' id = 'oak' data-item="wood"><img class="gridSizeImgProd" src="pic/picProducts/timber/planed-timber-american-white-oak-small-v2.jpg" alt=""><p class="pcla"><b>Oak</b>, produces good results with hand and machine tools. Has moderately high shrinkage values, resulting in mediocre dimensional stability, especially in flatsawn boards. Can react with iron (particularly when wet) and cause staining and discoloration. Responds well to steam-bending. Glues, stains, and finishes well. <br><br>Quantity 1: 27mm x 27mm x 1m = 7.29 &#8364; <br><br>
         <label for="length_mm">Th. mm </label><input class="calc_mm" type="number" name="le_mm" id="oakLe_mm" min="27" max="9999">
         <label for="length_mm"> x Wi. mm </label><input class="calc_mm" type="number" name="wi_mm" id="oakWi_mm" min="27" max="9999">
         <label for="length_mm"> x Le. mm </label><input class="calc_mm" type="number" name="th_mm" id="oakTh_mm" min="1" max="9999">
@@ -122,7 +122,7 @@ session_start();
       <a href="regPage.php" class="buyNow">Buy Now</a>
       </div>
 
-      <div class="item1" name = 'beech' data-item="wood"><img class="gridSizeImgProd" src="pic/picProducts/timber/planed-timber-beech-small-v2.jpg" alt=""><p class="pcla"><b>Beech</b>, overall good workability; it machines well, and glues, finishes, and turns well. Beech also responds superbly to steam-bending. However, it does have a large amount of movement in service, so movement and wood stability must be taken into account. <br><br>Quantity 1: 25mm x 25mm x 1m = 7.50 &#8364; <br><br>
+      <div class="item1" name = 'beech' id="beech" data-item="wood"><img class="gridSizeImgProd" src="pic/picProducts/timber/planed-timber-beech-small-v2.jpg" alt=""><p class="pcla"><b>Beech</b>, overall good workability; it machines well, and glues, finishes, and turns well. Beech also responds superbly to steam-bending. However, it does have a large amount of movement in service, so movement and wood stability must be taken into account. <br><br>Quantity 1: 25mm x 25mm x 1m = 7.50 &#8364; <br><br>
         <label for="length_mm">Th. mm </label><input class="calc_mm" type="number" name="le_mm" id="beechLe_mm" min="25" max="9999">
         <label for="length_mm"> x Wi. mm </label><input class="calc_mm" type="number" name="wi_mm" id="beechWi_mm" min="25" max="9999">
         <label for="length_mm"> x Le. mm </label><input class="calc_mm" type="number" name="th_mm" id="beechTh_mm" min="1" max="9999">
@@ -136,7 +136,7 @@ session_start();
       <a href="regPage.php" class="buyNow">Buy Now</a>
       </div>
 
-      <div class="item1" name = 'maple' data-item="wood"><img class="gridSizeImgProd" src="pic/picProducts/timber/planed-timber-canadian-maple-small-v2.jpg" alt=""><p class="pcla"><b>Maple </b> considered to be reasonably easy to work with when using both hand and machine tools. It also glues and finishes very well, however, due to the high density of the wood, it may require a little extra work. Canadian Hard Maple can be polished and stained to create an exquisite finish. <br><br>Quantity 1: 20mm x 20mm x 1m = 12.00 &#8364; <br><br>
+      <div class="item1" name = 'maple' id = 'maple' data-item="wood"><img class="gridSizeImgProd" src="pic/picProducts/timber/planed-timber-canadian-maple-small-v2.jpg" alt=""><p class="pcla"><b>Maple </b> considered to be reasonably easy to work with when using both hand and machine tools. It also glues and finishes very well, however, due to the high density of the wood, it may require a little extra work. Canadian Hard Maple can be polished and stained to create an exquisite finish. <br><br>Quantity 1: 20mm x 20mm x 1m = 12.00 &#8364; <br><br>
         <label for="length_mm">Th. mm </label><input class="calc_mm" type="number" name="le_mm" id="mapleLe_mm" min="20" max="9999">
         <label for="length_mm"> x Wi. mm </label><input class="calc_mm" type="number" name="wi_mm" id="mapleWi_mm" min="20" max="9999">
         <label for="length_mm"> x Le. mm </label><input class="calc_mm" type="number" name="th_mm" id="mapleTh_mm" min="1" max="9999">
@@ -163,7 +163,7 @@ session_start();
 
       <h2 class="smallTitle">WoodBoarding Tools</h2>
 
-      <div class="item1"><img class="gridSizeImgProd" src="pic/picProducts/tool/table.png" alt=""><p class="pcla"><b>Wooden Work Bench </b>  version of a traditional woodworking bench. This bench is constructed from quality beech much harder wearing than standard softwood benches. <br><br>Quantity 1: <b class="strikethrough">350.00</b> Only 280  &#8364  <br><br>
+      <div class="item1" id="Bench"><img class="gridSizeImgProd" src="pic/picProducts/tool/table.png" alt=""><p class="pcla"><b>Wooden Work Bench </b>  version of a traditional woodworking bench. This bench is constructed from quality beech much harder wearing than standard softwood benches. <br><br>Quantity 1: <b class="strikethrough">350.00</b> Only 280  &#8364  <br><br>
         <label for="length_mm">Quantity: </label><input type="number" name="bench" id="bench" oninput="CalculateNumBench()" min="1" max="9999">
         
         =
@@ -175,7 +175,7 @@ session_start();
       <a href="regPage.php" class="buyNow">Buy Now</a>
       </div>
 
-      <div class="item1"><img class="gridSizeImgProd" src="pic/picProducts/tool/screwdriver.png" alt=""><p class="pcla"><b>Screwdriver</b>, cushion grip screwdriver from Stanley features a large diameter handle that offers greater torque. It reduces the chance of breakage with the high-grade bar and features a magnetic tip for easy screw pick-up. <br><br>Quantity 1: <b class="strikethrough">15.00</b> Only 12.00 &#8364; <br><br>
+      <div class="item1" id="Screwdriver"><img class="gridSizeImgProd" src="pic/picProducts/tool/screwdriver.png" alt=""><p class="pcla"><b>Screwdriver</b>, cushion grip screwdriver from Stanley features a large diameter handle that offers greater torque. It reduces the chance of breakage with the high-grade bar and features a magnetic tip for easy screw pick-up. <br><br>Quantity 1: <b class="strikethrough">15.00</b> Only 12.00 &#8364; <br><br>
         <label for="length_mm">Quantity: </label><input class="toolPrice" type="number" name="screwdriver" id="screwdriver" oninput="CalculateNumScrewdriver()" min="1" max="9999">
         
         =
@@ -187,7 +187,7 @@ session_start();
       <a href="regPage.php" class="buyNow">Buy Now</a>
       </div>
 
-      <div class="item1"><img class="gridSizeImgProd" src="pic/picProducts/tool/hammer.png" alt=""><p class="pcla"><b>Hammer</b>, shaft is made from tubular steel for enhanced durability and rust resistance. The hammer head is fully polished and forged for strength and durability, so you have the confidence to use this hammer for your everyday jobs. <br><br>Quantity 1: <b class="strikethrough">14.00</b> Only 11.00 &#8364; <br><br>
+      <div class="item1" id="Hammer"><img class="gridSizeImgProd" src="pic/picProducts/tool/hammer.png" alt=""><p class="pcla"><b>Hammer</b>, shaft is made from tubular steel for enhanced durability and rust resistance. The hammer head is fully polished and forged for strength and durability, so you have the confidence to use this hammer for your everyday jobs. <br><br>Quantity 1: <b class="strikethrough">14.00</b> Only 11.00 &#8364; <br><br>
         <label for="length_mm">Quantity: </label><input class="calc_mm" type="number" name="hammer" id="hammer" oninput="CalculateNumHammer()" min="1" max="9999">
         
         =
@@ -199,7 +199,7 @@ session_start();
       <a href="regPage.php" class="buyNow">Buy Now</a>
       </div>
 
-      <div class="item1"><img class="gridSizeImgProd" src="pic/picProducts/tool/circularsaw.png" alt=""><p class="pcla"><b>Circular saw</b>, Carbide-tipped saw blade for general purpose cutting. Includes extension tables for increased support on large cuts. <br><br>Quantity 1: <b class="strikethrough">210.00</b> Only 168.00 &#8364; <br><br>
+      <div class="item1" id="Circularsaw"><img class="gridSizeImgProd" src="pic/picProducts/tool/circularsaw.png" alt=""><p class="pcla"><b>Circular saw</b>, Carbide-tipped saw blade for general purpose cutting. Includes extension tables for increased support on large cuts. <br><br>Quantity 1: <b class="strikethrough">210.00</b> Only 168.00 &#8364; <br><br>
         <label for="length_mm">Quantity: </label><input class="calc_mm" type="number" name="circularsaw" id="circularsaw" oninput="CalculateNumCircularSaw()" min="1" max="9999">
         
         =
@@ -211,7 +211,7 @@ session_start();
       <a href="regPage.php" class="buyNow">Buy Now</a>
       </div>
 
-      <div class="item1"><img class="gridSizeImgProd" src="pic/picProducts/tool/chisel.png" alt=""><p class="pcla"><b>Chisel</b>, High quality wood chisel with hardened and annealed blade. Slow to blunt or rust and sharpened ready for use. Striking cap prolongs life and prevents handle mushrooming. <br><br>Quantity 1: <b class="strikethrough">8.00</b> Only 6.00 &#8364; <br><br>
+      <div class="item1" id="Chisel"><img class="gridSizeImgProd" src="pic/picProducts/tool/chisel.png" alt=""><p class="pcla"><b>Chisel</b>, High quality wood chisel with hardened and annealed blade. Slow to blunt or rust and sharpened ready for use. Striking cap prolongs life and prevents handle mushrooming. <br><br>Quantity 1: <b class="strikethrough">8.00</b> Only 6.00 &#8364; <br><br>
         <label for="length_mm">Quantity: </label><input class="calc_mm" type="number" name="chisel" id="chisel" oninput="CalculateNumChisel()" min="1" max="9999">
         
         =
@@ -223,7 +223,7 @@ session_start();
       <a href="regPage.php" class="buyNow">Buy Now</a>
       </div>
 
-      <div class="item1"><img class="gridSizeImgProd" src="pic/picProducts/tool/saw.png" alt=""><p class="pcla"><b>Saw</b>, manufactured from high quality 1mm carbon steel, thats been correctly hardened, tempered, straightened and stress relieved to ensure the blades strength and straightness while the double ground set of the saw tooth. <br><br>Quantity 1: <b class="strikethrough">11.00</b> Only 8.00 &#8364; <br><br>
+      <div class="item1" id="Saw"><img class="gridSizeImgProd" src="pic/picProducts/tool/saw.png" alt=""><p class="pcla"><b>Saw</b>, manufactured from high quality 1mm carbon steel, thats been correctly hardened, tempered, straightened and stress relieved to ensure the blades strength and straightness while the double ground set of the saw tooth. <br><br>Quantity 1: <b class="strikethrough">11.00</b> Only 8.00 &#8364; <br><br>
         <label for="length_mm">Quantity: </label><input class="calc_mm" type="number" name="saw" id="saw" oninput="CalculateNumSaw()" min="1" max="9999">
         
         =
@@ -242,12 +242,12 @@ session_start();
 
 
  <footer id="footer">
-    <a class="footerSty" href="#home">Delivery</a>
-    <a class="footerSty" href="#news">Customer Service</a>
-    <a class="footerSty" href="#contact">Payment Methods</a>
-    <a class="footerSty" href="#contact">Careers</a>
-    <a class="footerSty" href="#contact">Make Money with Us</a>
-    <a class="footerSty" href="#about">PRIVACY POLICY</a>
+    <a class="footerSty" href="contact.php">Delivery</a>
+    <a class="footerSty" href="contact.php">Customer Service</a>
+    <a class="footerSty" href="contact.php">Payment Methods</a>
+    <a class="footerSty" href="contact.php">Careers</a>
+    <a class="footerSty" href="contact.php">Make Money with Us</a>
+    <a class="footerSty" href="contact.php">PRIVACY POLICY</a>
  </footer>
  <script src="woodCalculator.js"></script>
 </body>
